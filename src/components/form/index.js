@@ -1,5 +1,5 @@
 export { default as FormProvider } from "./FormProvider";
-export { default as FCheckbox } from "./Fcheckbox";
+export { default as FCheckbox } from "./FCheckbox";
 export { default as FMultiCheckbox } from "./FMultiCheckbox";
 export { default as FRadioGroup } from "./FRadioGroup";
 export { default as FSelect } from "./FSelect";
