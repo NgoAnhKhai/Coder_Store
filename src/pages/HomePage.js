@@ -27,7 +27,8 @@ function HomePage() {
   });
   const { watch, reset } = methods;
   const filters = watch();
-  const filterProducts = applyFilter(products, filters);
+  const filterProducts =
+    Array.isArray(products) && filters ? applyFilter(products, filters) : [];
 
   useEffect(() => {
     const getProducts = async () => {
@@ -102,7 +103,7 @@ function applyFilter(products, filters) {
   }
 
   // FILTER PRODUCTS
-  if (filters.gender.length > 0) {
+  if (Array.isArray(filters.gender) && filters.gender.length > 0) {
     filteredProducts = products.filter((product) =>
       filters.gender.includes(product.gender)
     );
