@@ -1,8 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { styled } from "@mui/material/styles";
-
-import { Stack } from "@mui/material";
 import Logo from "../components/Logo";
+import { Stack } from "@mui/material";
 
 const HeaderStyle = styled("header")(({ theme }) => ({
   top: "10%",
